@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <!--android:text="后退"-->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/webview_btn_back_dr" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <!--android:text="前进"-->
+        <ImageButton
+            android:id="@+id/btn_forward"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/webview_btn_forward_dr" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+        <!--android:text="刷新"-->
+        <ImageButton
+            android:id="@+id/btn_refresh"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_back_refresh" />
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <!--android:text="关闭"-->
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_close" />
+
+        <LinearLayout
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    
+
+
+</LinearLayout>

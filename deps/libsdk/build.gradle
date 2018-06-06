@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':libcocos2dx')
+    compile project(':umshare')
+    compile project(':mp3recorder')
+    compile project(':baiduloc')
+    compile project(':album')
+    compile project(':libbugly')
+    compile project(':easypermissions')
+    compile project(':libumeng')
+    compile 'com.meituan.android.walle:library:1.1.6'
+    //集成瓦力插件库  用于读取渠道信息
+}

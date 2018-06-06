@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\newProj\deps\library\libbugly\src\main\assets"/><source path="F:\newProj\deps\library\libbugly\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\newProj\deps\library\libbugly\src\debug\assets"/></dataSet></merger>
