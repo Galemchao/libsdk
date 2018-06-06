@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\newProj\deps\library\libbugly\libs"><file name="armeabi/libBugly.so" path="F:\newProj\deps\library\libbugly\libs\armeabi\libBugly.so"/><file name="bugly_agent.jar" path="F:\newProj\deps\library\libbugly\libs\bugly_agent.jar"/><file name="bugly_crash_release.jar" path="F:\newProj\deps\library\libbugly\libs\bugly_crash_release.jar"/></source></dataSet><dataSet config="debug"><source path="F:\newProj\deps\library\libbugly\src\debug\jniLibs"/></dataSet></merger>
