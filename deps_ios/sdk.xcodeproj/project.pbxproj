@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C2A33C20A52CA100F673DF /* IOSiAP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07C2A33720A52CA100F673DF /* IOSiAP.mm */; };
+		07C2A33D20A52CA100F673DF /* IOSiAP_Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07C2A33920A52CA100F673DF /* IOSiAP_Bridge.mm */; };
+		07C2A33E20A52CA100F673DF /* sdk_iospay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07C2A33B20A52CA100F673DF /* sdk_iospay.mm */; };
+		07D495D120A455460054BD15 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C320A455450054BD15 /* BaiduMapAPI_Base.framework */; };
+		07D495D220A455460054BD15 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C420A455450054BD15 /* BaiduMapAPI_Cloud.framework */; };
+		07D495D320A455460054BD15 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C520A455450054BD15 /* BaiduMapAPI_Location.framework */; };
+		07D495D420A455460054BD15 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C620A455450054BD15 /* BaiduMapAPI_Map.framework */; };
+		07D495D520A455460054BD15 /* BaiduMapAPI_Radar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C720A455450054BD15 /* BaiduMapAPI_Radar.framework */; };
+		07D495D620A455460054BD15 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C820A455450054BD15 /* BaiduMapAPI_Search.framework */; };
+		07D495D720A455460054BD15 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495C920A455450054BD15 /* BaiduMapAPI_Utils.framework */; };
+		07D495D820A455460054BD15 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495CB20A455450054BD15 /* libcrypto.a */; };
+		07D495D920A455460054BD15 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D495CC20A455450054BD15 /* libssl.a */; };
+		07D495DA20A455460054BD15 /* bdlocate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D495CE20A455450054BD15 /* bdlocate.mm */; };
+		07D495DB20A455460054BD15 /* sdk_baiduloc.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07D495D020A455450054BD15 /* sdk_baiduloc.mm */; };
+		1E5CEFD71DDCC24F0087A5AC /* sdk.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1E5CEFD61DDCC24F0087A5AC /* sdk.mm */; };
+		1E6E9F4F1F25F24F00A3021F /* UShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9EA01F25F24F00A3021F /* UShareUI.framework */; };
+		1E6E9F501F25F24F00A3021F /* libUMSocialCloudShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9EA21F25F24F00A3021F /* libUMSocialCloudShare.a */; };
+		1E6E9F511F25F24F00A3021F /* libUMSocialLog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9EA31F25F24F00A3021F /* libUMSocialLog.a */; };
+		1E6E9F521F25F24F00A3021F /* UMSocialCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9EA51F25F24F00A3021F /* UMSocialCore.framework */; };
+		1E6E9F531F25F24F00A3021F /* UMSocialNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9EA61F25F24F00A3021F /* UMSocialNetwork.framework */; };
+		1E6E9F7B1F25F25000A3021F /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6E9F411F25F24F00A3021F /* libSocialWeChat.a */; };
+		1EFBAD981DE0A7D200BD55CB /* sdk_um.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBAD971DE0A7D200BD55CB /* sdk_um.mm */; };
+		1EFBADA31DE0C49700BD55CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFBABC71DE0A41A00BD55CB /* SystemConfiguration.framework */; };
+		1EFBADA51DE0C4A100BD55CB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFBADA41DE0C4A100BD55CB /* CoreTelephony.framework */; };
+		1EFBADAB1DE0C4D600BD55CB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFBADAA1DE0C4D600BD55CB /* ImageIO.framework */; };
+		387F827D1E14AC3500D1EC5E /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F827A1E14AC3500D1EC5E /* libmp3lame.a */; };
+		387F827E1E14AC3500D1EC5E /* sdk_audio.mm in Sources */ = {isa = PBXBuildFile; fileRef = 387F827C1E14AC3500D1EC5E /* sdk_audio.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		387F82831E14AC4400D1EC5E /* WbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F82811E14AC4400D1EC5E /* WbViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		387F82C81E14B47700D1EC5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F82C71E14B47700D1EC5E /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1E5CEFC61DDCC1E00087A5AC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07C2A32E20A52C8800F673DF /* IOSiAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSiAP.h; sourceTree = "<group>"; };
+		07C2A32F20A52C8800F673DF /* IOSiAP.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSiAP.mm; sourceTree = "<group>"; };
+		07C2A33020A52C8800F673DF /* IOSiAP_Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSiAP_Bridge.h; sourceTree = "<group>"; };
+		07C2A33120A52C8800F673DF /* IOSiAP_Bridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSiAP_Bridge.mm; sourceTree = "<group>"; };
+		07C2A33220A52C8800F673DF /* sdk_iospay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sdk_iospay.h; sourceTree = "<group>"; };
+		07C2A33320A52C8800F673DF /* sdk_iospay.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk_iospay.mm; sourceTree = "<group>"; };
+		07C2A33620A52CA100F673DF /* IOSiAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSiAP.h; sourceTree = "<group>"; };
+		07C2A33720A52CA100F673DF /* IOSiAP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSiAP.mm; sourceTree = "<group>"; };
+		07C2A33820A52CA100F673DF /* IOSiAP_Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSiAP_Bridge.h; sourceTree = "<group>"; };
+		07C2A33920A52CA100F673DF /* IOSiAP_Bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSiAP_Bridge.mm; sourceTree = "<group>"; };
+		07C2A33A20A52CA100F673DF /* sdk_iospay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_iospay.h; sourceTree = "<group>"; };
+		07C2A33B20A52CA100F673DF /* sdk_iospay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk_iospay.mm; sourceTree = "<group>"; };
+		07D495C320A455450054BD15 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		07D495C420A455450054BD15 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
+		07D495C520A455450054BD15 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
+		07D495C620A455450054BD15 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		07D495C720A455450054BD15 /* BaiduMapAPI_Radar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Radar.framework; sourceTree = "<group>"; };
+		07D495C820A455450054BD15 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		07D495C920A455450054BD15 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		07D495CB20A455450054BD15 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		07D495CC20A455450054BD15 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		07D495CD20A455450054BD15 /* bdlocate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bdlocate.h; sourceTree = "<group>"; };
+		07D495CE20A455450054BD15 /* bdlocate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = bdlocate.mm; sourceTree = "<group>"; };
+		07D495CF20A455450054BD15 /* sdk_baiduloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_baiduloc.h; sourceTree = "<group>"; };
+		07D495D020A455450054BD15 /* sdk_baiduloc.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk_baiduloc.mm; sourceTree = "<group>"; };
+		1E5CEFC81DDCC1E00087A5AC /* libsdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5CEFD51DDCC24F0087A5AC /* sdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk.h; sourceTree = "<group>"; };
+		1E5CEFD61DDCC24F0087A5AC /* sdk.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk.mm; sourceTree = "<group>"; };
+		1E6E9E9F1F25F24F00A3021F /* UMSocialSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResources.bundle; sourceTree = "<group>"; };
+		1E6E9EA01F25F24F00A3021F /* UShareUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UShareUI.framework; sourceTree = "<group>"; };
+		1E6E9EA21F25F24F00A3021F /* libUMSocialCloudShare.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialCloudShare.a; sourceTree = "<group>"; };
+		1E6E9EA31F25F24F00A3021F /* libUMSocialLog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocialLog.a; sourceTree = "<group>"; };
+		1E6E9EA51F25F24F00A3021F /* UMSocialCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialCore.framework; sourceTree = "<group>"; };
+		1E6E9EA61F25F24F00A3021F /* UMSocialNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMSocialNetwork.framework; sourceTree = "<group>"; };
+		1E6E9EA71F25F24F00A3021F /* UMSocialSDKPromptResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKPromptResources.bundle; sourceTree = "<group>"; };
+		1E6E9F411F25F24F00A3021F /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialWeChat.a; sourceTree = "<group>"; };
+		1E6E9F421F25F24F00A3021F /* UMSocialWechatHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialWechatHandler.h; sourceTree = "<group>"; };
+		1EFBABC71DE0A41A00BD55CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1EFBAD961DE0A7D200BD55CB /* sdk_um.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_um.h; sourceTree = "<group>"; };
+		1EFBAD971DE0A7D200BD55CB /* sdk_um.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk_um.mm; sourceTree = "<group>"; };
+		1EFBAD9A1DE0AFF300BD55CB /* sdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkdef.h; sourceTree = "<group>"; };
+		1EFBADA41DE0C4A100BD55CB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1EFBADAA1DE0C4D600BD55CB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		387F82791E14AC3500D1EC5E /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		387F827A1E14AC3500D1EC5E /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		387F827B1E14AC3500D1EC5E /* sdk_audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_audio.h; sourceTree = "<group>"; };
+		387F827C1E14AC3500D1EC5E /* sdk_audio.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sdk_audio.mm; sourceTree = "<group>"; };
+		387F82801E14AC4400D1EC5E /* WbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WbViewController.h; sourceTree = "<group>"; };
+		387F82811E14AC4400D1EC5E /* WbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WbViewController.m; sourceTree = "<group>"; };
+		387F82C71E14B47700D1EC5E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		38F296751E19165100C1AD31 /* WbViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WbViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E5CEFC51DDCC1E00087A5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D495D920A455460054BD15 /* libssl.a in Frameworks */,
+				387F82C81E14B47700D1EC5E /* UIKit.framework in Frameworks */,
+				1E6E9F501F25F24F00A3021F /* libUMSocialCloudShare.a in Frameworks */,
+				07D495D720A455460054BD15 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				1E6E9F531F25F24F00A3021F /* UMSocialNetwork.framework in Frameworks */,
+				1EFBADAB1DE0C4D600BD55CB /* ImageIO.framework in Frameworks */,
+				1E6E9F4F1F25F24F00A3021F /* UShareUI.framework in Frameworks */,
+				07D495D320A455460054BD15 /* BaiduMapAPI_Location.framework in Frameworks */,
+				1EFBADA51DE0C4A100BD55CB /* CoreTelephony.framework in Frameworks */,
+				07D495D620A455460054BD15 /* BaiduMapAPI_Search.framework in Frameworks */,
+				07D495D220A455460054BD15 /* BaiduMapAPI_Cloud.framework in Frameworks */,
+				07D495D420A455460054BD15 /* BaiduMapAPI_Map.framework in Frameworks */,
+				07D495D820A455460054BD15 /* libcrypto.a in Frameworks */,
+				1E6E9F511F25F24F00A3021F /* libUMSocialLog.a in Frameworks */,
+				1EFBADA31DE0C49700BD55CB /* SystemConfiguration.framework in Frameworks */,
+				1E6E9F521F25F24F00A3021F /* UMSocialCore.framework in Frameworks */,
+				07D495D120A455460054BD15 /* BaiduMapAPI_Base.framework in Frameworks */,
+				07D495D520A455460054BD15 /* BaiduMapAPI_Radar.framework in Frameworks */,
+				1E6E9F7B1F25F25000A3021F /* libSocialWeChat.a in Frameworks */,
+				387F827D1E14AC3500D1EC5E /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C2A32D20A52C8800F673DF /* iospay */ = {
+			isa = PBXGroup;
+			children = (
+				07C2A32E20A52C8800F673DF /* IOSiAP.h */,
+				07C2A32F20A52C8800F673DF /* IOSiAP.mm */,
+				07C2A33020A52C8800F673DF /* IOSiAP_Bridge.h */,
+				07C2A33120A52C8800F673DF /* IOSiAP_Bridge.mm */,
+				07C2A33220A52C8800F673DF /* sdk_iospay.h */,
+				07C2A33320A52C8800F673DF /* sdk_iospay.mm */,
+			);
+			path = iospay;
+			sourceTree = "<group>";
+		};
+		07C2A33520A52CA100F673DF /* iospay */ = {
+			isa = PBXGroup;
+			children = (
+				07C2A33620A52CA100F673DF /* IOSiAP.h */,
+				07C2A33720A52CA100F673DF /* IOSiAP.mm */,
+				07C2A33820A52CA100F673DF /* IOSiAP_Bridge.h */,
+				07C2A33920A52CA100F673DF /* IOSiAP_Bridge.mm */,
+				07C2A33A20A52CA100F673DF /* sdk_iospay.h */,
+				07C2A33B20A52CA100F673DF /* sdk_iospay.mm */,
+			);
+			path = iospay;
+			sourceTree = "<group>";
+		};
+		07D495C120A455450054BD15 /* baiduloc */ = {
+			isa = PBXGroup;
+			children = (
+				07D495C220A455450054BD15 /* BaiduMap_IOSSDK_v3 */,
+				07D495CD20A455450054BD15 /* bdlocate.h */,
+				07D495CE20A455450054BD15 /* bdlocate.mm */,
+				07D495CF20A455450054BD15 /* sdk_baiduloc.h */,
+				07D495D020A455450054BD15 /* sdk_baiduloc.mm */,
+			);
+			path = baiduloc;
+			sourceTree = "<group>";
+		};
+		07D495C220A455450054BD15 /* BaiduMap_IOSSDK_v3 */ = {
+			isa = PBXGroup;
+			children = (
+				07D495C320A455450054BD15 /* BaiduMapAPI_Base.framework */,
+				07D495C420A455450054BD15 /* BaiduMapAPI_Cloud.framework */,
+				07D495C520A455450054BD15 /* BaiduMapAPI_Location.framework */,
+				07D495C620A455450054BD15 /* BaiduMapAPI_Map.framework */,
+				07D495C720A455450054BD15 /* BaiduMapAPI_Radar.framework */,
+				07D495C820A455450054BD15 /* BaiduMapAPI_Search.framework */,
+				07D495C920A455450054BD15 /* BaiduMapAPI_Utils.framework */,
+				07D495CA20A455450054BD15 /* thirdlibs */,
+			);
+			path = BaiduMap_IOSSDK_v3;
+			sourceTree = "<group>";
+		};
+		07D495CA20A455450054BD15 /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				07D495CB20A455450054BD15 /* libcrypto.a */,
+				07D495CC20A455450054BD15 /* libssl.a */,
+			);
+			path = thirdlibs;
+			sourceTree = "<group>";
+		};
+		1E5CEFBF1DDCC1E00087A5AC = {
+			isa = PBXGroup;
+			children = (
+				07C2A33520A52CA100F673DF /* iospay */,
+				07D495C120A455450054BD15 /* baiduloc */,
+				387F827F1E14AC4400D1EC5E /* webview */,
+				387F82771E14AC3500D1EC5E /* audio */,
+				1EFBABC91DE0A76C00BD55CB /* umshare */,
+				1E5CEFD41DDCC24F0087A5AC /* sdk */,
+				1E5CEFC91DDCC1E00087A5AC /* Products */,
+				1EFBABC41DE0A3DC00BD55CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E5CEFC91DDCC1E00087A5AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E5CEFC81DDCC1E00087A5AC /* libsdk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E5CEFD41DDCC24F0087A5AC /* sdk */ = {
+			isa = PBXGroup;
+			children = (
+				1EFBAD9A1DE0AFF300BD55CB /* sdkdef.h */,
+				1E5CEFD51DDCC24F0087A5AC /* sdk.h */,
+				1E5CEFD61DDCC24F0087A5AC /* sdk.mm */,
+			);
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		1E6E9E9E1F25F24F00A3021F /* UMSocialUI */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9E9F1F25F24F00A3021F /* UMSocialSDKResources.bundle */,
+				1E6E9EA01F25F24F00A3021F /* UShareUI.framework */,
+			);
+			path = UMSocialUI;
+			sourceTree = "<group>";
+		};
+		1E6E9EA11F25F24F00A3021F /* UMSocialSDKPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9EA21F25F24F00A3021F /* libUMSocialCloudShare.a */,
+				1E6E9EA31F25F24F00A3021F /* libUMSocialLog.a */,
+			);
+			path = UMSocialSDKPlugin;
+			sourceTree = "<group>";
+		};
+		1E6E9EA41F25F24F00A3021F /* UMSocialSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9EA51F25F24F00A3021F /* UMSocialCore.framework */,
+				1E6E9EA61F25F24F00A3021F /* UMSocialNetwork.framework */,
+				1E6E9EA71F25F24F00A3021F /* UMSocialSDKPromptResources.bundle */,
+			);
+			path = UMSocialSDK;
+			sourceTree = "<group>";
+		};
+		1E6E9EA81F25F24F00A3021F /* SocialLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9F401F25F24F00A3021F /* WeChat */,
+			);
+			path = SocialLibraries;
+			sourceTree = "<group>";
+		};
+		1E6E9F401F25F24F00A3021F /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9F411F25F24F00A3021F /* libSocialWeChat.a */,
+				1E6E9F421F25F24F00A3021F /* UMSocialWechatHandler.h */,
+			);
+			path = WeChat;
+			sourceTree = "<group>";
+		};
+		1EA9397B1DE0CCFD00E1C784 /* UMSocial */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E9E9E1F25F24F00A3021F /* UMSocialUI */,
+				1E6E9EA11F25F24F00A3021F /* UMSocialSDKPlugin */,
+				1E6E9EA41F25F24F00A3021F /* UMSocialSDK */,
+				1E6E9EA81F25F24F00A3021F /* SocialLibraries */,
+			);
+			path = UMSocial;
+			sourceTree = "<group>";
+		};
+		1EFBABC41DE0A3DC00BD55CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C2A32D20A52C8800F673DF /* iospay */,
+				387F82C71E14B47700D1EC5E /* UIKit.framework */,
+				1EFBADAA1DE0C4D600BD55CB /* ImageIO.framework */,
+				1EFBADA41DE0C4A100BD55CB /* CoreTelephony.framework */,
+				1EFBABC71DE0A41A00BD55CB /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EFBABC91DE0A76C00BD55CB /* umshare */ = {
+			isa = PBXGroup;
+			children = (
+				1EA9397B1DE0CCFD00E1C784 /* UMSocial */,
+				1EFBAD961DE0A7D200BD55CB /* sdk_um.h */,
+				1EFBAD971DE0A7D200BD55CB /* sdk_um.mm */,
+			);
+			path = umshare;
+			sourceTree = "<group>";
+		};
+		387F82771E14AC3500D1EC5E /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				387F82781E14AC3500D1EC5E /* lame */,
+				387F827B1E14AC3500D1EC5E /* sdk_audio.h */,
+				387F827C1E14AC3500D1EC5E /* sdk_audio.mm */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		387F82781E14AC3500D1EC5E /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				387F82791E14AC3500D1EC5E /* lame.h */,
+				387F827A1E14AC3500D1EC5E /* libmp3lame.a */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		387F827F1E14AC4400D1EC5E /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				38F296751E19165100C1AD31 /* WbViewController.xib */,
+				387F82801E14AC4400D1EC5E /* WbViewController.h */,
+				387F82811E14AC4400D1EC5E /* WbViewController.m */,
+			);
+			path = webview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E5CEFC71DDCC1E00087A5AC /* sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5CEFD11DDCC1E00087A5AC /* Build configuration list for PBXNativeTarget "sdk" */;
+			buildPhases = (
+				1E5CEFC41DDCC1E00087A5AC /* Sources */,
+				1E5CEFC51DDCC1E00087A5AC /* Frameworks */,
+				1E5CEFC61DDCC1E00087A5AC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sdk;
+			productName = sdk;
+			productReference = 1E5CEFC81DDCC1E00087A5AC /* libsdk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E5CEFC01DDCC1E00087A5AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Jeep;
+				TargetAttributes = {
+					1E5CEFC71DDCC1E00087A5AC = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = VSX8YSEEKW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1E5CEFC31DDCC1E00087A5AC /* Build configuration list for PBXProject "sdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E5CEFBF1DDCC1E00087A5AC;
+			productRefGroup = 1E5CEFC91DDCC1E00087A5AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E5CEFC71DDCC1E00087A5AC /* sdk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E5CEFC41DDCC1E00087A5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C2A33C20A52CA100F673DF /* IOSiAP.mm in Sources */,
+				07C2A33D20A52CA100F673DF /* IOSiAP_Bridge.mm in Sources */,
+				1E5CEFD71DDCC24F0087A5AC /* sdk.mm in Sources */,
+				1EFBAD981DE0A7D200BD55CB /* sdk_um.mm in Sources */,
+				07D495DA20A455460054BD15 /* bdlocate.mm in Sources */,
+				387F82831E14AC4400D1EC5E /* WbViewController.m in Sources */,
+				387F827E1E14AC3500D1EC5E /* sdk_audio.mm in Sources */,
+				07D495DB20A455460054BD15 /* sdk_baiduloc.mm in Sources */,
+				07C2A33E20A52CA100F673DF /* sdk_iospay.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E5CEFCF1DDCC1E00087A5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VSX8YSEEKW;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"CC_LUA_ENGINE_ENABLED=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/third_party/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/kazmath/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCControlExtension\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCEditBox\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/cocos2dx_support\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/tolua\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/luajit/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extensions_luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/cjson\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/zlib\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/CSArmature\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1E5CEFD01DDCC1E00087A5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VSX8YSEEKW;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					CC_TARGET_OS_IPHONE,
+					"CC_LUA_ENGINE_ENABLED=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/third_party/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/kazmath/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCControlExtension\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCEditBox\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/cocos2dx_support\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/tolua\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/luajit/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extensions_luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/cjson\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/zlib\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/CSArmature\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E5CEFD21DDCC1E00087A5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VSX8YSEEKW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DingDing",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Facebook",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Kakao",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Linkedin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Twitter",
+					"$(PROJECT_DIR)/baiduloc/BaiduMap_IOSSDK_v3",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/third_party/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/kazmath/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCControlExtension\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCEditBox\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/cocos2dx_support\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/tolua\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/luajit/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extensions_luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/cjson\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/zlib\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/CSArmature\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party\"",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+					"$(PROJECT_DIR)/audio/lame",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/wx/OpenSDK1.7.5",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/AlipayShare",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DingDing",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DropBox",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Email",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/EverNote",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Facebook",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Flickr",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/GooglePlus",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Instagram",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Kakao",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/LaiWang",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Line",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Linkedin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Pinterest",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Pocket",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/SMS",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/TencentWeibo",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Tumblr",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Twitter",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/UniqueId",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/VKontakte",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/WhatsApp",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/YiXin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/YouDao",
+					"$(PROJECT_DIR)/baiduloc/BaiduMap_IOSSDK_v3/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		1E5CEFD31DDCC1E00087A5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VSX8YSEEKW;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialUI",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialSDK",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DingDing",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Facebook",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Kakao",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Linkedin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Twitter",
+					"$(PROJECT_DIR)/baiduloc/BaiduMap_IOSSDK_v3",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/platform/third_party/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/cocos2dx/kazmath/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/CocosDenshion/ios\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCControlExtension\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/extensions/GUI/CCEditBox\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/cocos2dx_support\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/tolua\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2d-x/scripting/lua/luajit/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extensions_luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/cocos2dx_extra/extra/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/cjson\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/lua_extensions/zlib\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/include\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/chipmunk/luabinding\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party/CSArmature\"",
+					"\"$(QUICK_COCOS2DX_ROOT)/lib/third_party\"",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/umshare/UMSocial/**",
+					"$(PROJECT_DIR)/audio/lame",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/wx/OpenSDK1.7.5",
+					"$(PROJECT_DIR)/umshare/UMSocial/UMSocialSDKPlugin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/AlipayShare",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DingDing",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Douban",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/DropBox",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Email",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/EverNote",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Facebook",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Flickr",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/GooglePlus",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Instagram",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Kakao",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/LaiWang",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Line",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Linkedin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Pinterest",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Pocket",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Renren",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/SMS",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/TencentWeibo",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Tumblr",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/Twitter",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/UniqueId",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/VKontakte",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/WhatsApp",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/YiXin",
+					"$(PROJECT_DIR)/umshare/UMSocial/SocialLibraries/YouDao",
+					"$(PROJECT_DIR)/baiduloc/BaiduMap_IOSSDK_v3/thirdlibs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E5CEFC31DDCC1E00087A5AC /* Build configuration list for PBXProject "sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5CEFCF1DDCC1E00087A5AC /* Debug */,
+				1E5CEFD01DDCC1E00087A5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E5CEFD11DDCC1E00087A5AC /* Build configuration list for PBXNativeTarget "sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5CEFD21DDCC1E00087A5AC /* Debug */,
+				1E5CEFD31DDCC1E00087A5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E5CEFC01DDCC1E00087A5AC /* Project object */;
+}
